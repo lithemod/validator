@@ -1,0 +1,27 @@
+{
+    "name": "lithemod/validator",
+    "description": "A simple validator for validating input data in PHP applications.",
+    "type": "library",
+    "require": {
+        "lithemod/log": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lithe\\Base\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit"
+    },
+    "license": "MIT"
+}
