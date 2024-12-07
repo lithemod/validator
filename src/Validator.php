@@ -149,7 +149,7 @@ class Validator
     // Validate if the field value contains only letters and spaces
     protected function validateName(string $field, $params): bool
     {
-        return preg_match('/^[a-zA-Z\s]+$/', $this->data[$field]) === 1;
+        return preg_match('/^[\p{L}\s]+$/u', $this->data[$field]) === 1;
     }
 
     // Validate if the field value is one of the allowed values
